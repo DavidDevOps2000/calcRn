@@ -13,10 +13,10 @@ const Painel = props => (
     />
     <Operacao
       operacao={props.operacao}
-      atualizaValorOperacao={props.atualizaValor}
+      atualizaValorOperacao={props.atualizaOperacao}
     />
     <Comando acao={props.calcular} />
   </View>
 );
 
-export default Painel;
+export {Painel}; /*Tem que usar assim para que se use o index.js para emportar, e nao usar export default */

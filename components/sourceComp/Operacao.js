@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Text, Picker, View} from 'react-native';
+import {Picker} from 'react-native';
 
 //Picker é semelhante um selectBox do HTML.
 export default class Operacao extends Component {
@@ -13,9 +13,7 @@ export default class Operacao extends Component {
       <Picker
         style={estilo.operacao}
         selectedValue={this.props.operacao}
-        onValueChange={op => {
-          this.props.atualizaOperacao(op);
-        }}>
+        onValueChange={op => { this.props.atualizaOperacao(op); }}>
         <Picker.Item label="Soma" value="soma" />
         <Picker.Item label="Subtração" value="subtracao" />
       </Picker>
