@@ -1,6 +1,4 @@
-import React from 'react'
-import {Button}from 'react-native';
+import React from 'react';
+import {Button} from 'react-native';
 
-export default props => (
-        <Button title="Calcular"/>
-    )
+export default props => <Button title="Calcular" onPress={props.acao} />;
